@@ -1145,7 +1145,7 @@ public class MaterialSearchBar extends RelativeLayout implements View.OnClickLis
             navIconResId = source.readInt();
             searchIconRes = source.readInt();
             hint = source.readString();
-            suggestions = source.readArrayList(null);
+            suggestions = source.readArrayList(getClass().getClassLoader());
             maxSuggestions = source.readInt();
         }
 
